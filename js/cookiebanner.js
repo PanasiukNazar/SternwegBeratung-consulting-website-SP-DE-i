@@ -3,15 +3,15 @@ const cookieBox = document.querySelector('.cookie-wrapper'),
 
 cookieBox.classList.add('show');
 
-if (localStorage.getItem('hideCookies', true)) {
-    cookieBox.classList.add('hidden');
-}
+// if (localStorage.getItem('hideCookies', true)) {
+//     cookieBox.classList.add('hidden');
+// }
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         cookieBox.classList.remove('show');
         cookieBox.classList.add('hidden');
-        localStorage.setItem('hideCookies', true);
+        // localStorage.setItem('hideCookies', true);
 
         //if button has acceptBtn id
         if (button.id == 'acceptBtn') {
